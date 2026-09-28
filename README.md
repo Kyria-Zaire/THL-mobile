@@ -21,7 +21,7 @@ Marketplace mobile premium pour le convoyage automobile haut de gamme.
 
 - Node 20+
 - pnpm 9+
-- Python 3.11+
+- Python 3.12+
 - uv (https://docs.astral.sh/uv/)
 - Docker Desktop
 
@@ -32,8 +32,18 @@ pnpm install
 cp .env.example .env
 docker compose up -d postgres
 pnpm api migrate
-pnpm api dev
-pnpm mobile start
+pnpm api dev    # API THL sur http://127.0.0.1:8005
+pnpm mobile     # Expo
+```
+
+Le port **8005** est réservé à l'API THL en développement local. Le port 8000
+reste attribué à `yunicity-backend-dev` et ne doit pas être réutilisé par ce projet.
+
+Vérification rapide :
+
+```bash
+curl http://localhost:8005/health
+# {"status":"ok"}
 ```
 
 ## Gouvernance

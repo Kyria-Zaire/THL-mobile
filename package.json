@@ -7,7 +7,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "mobile": "pnpm --filter mobile",
+    "mobile": "pnpm --filter mobile start",
     "api": "pnpm --filter api"
   }
 }

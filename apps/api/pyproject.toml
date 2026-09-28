@@ -17,6 +17,9 @@ dependencies = [
   "uvicorn[standard]>=0.34.0",
 ]
 
+[project.scripts]
+dev = "thl_api.cli:dev"
+
 [dependency-groups]
 dev = [
   "mypy>=1.14.0",
