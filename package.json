@@ -1,0 +1,13 @@
+{
+  "name": "thl-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.16.1",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "mobile": "pnpm --filter mobile",
+    "api": "pnpm --filter api"
+  }
+}

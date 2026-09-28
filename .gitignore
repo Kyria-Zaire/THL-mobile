@@ -1,0 +1,32 @@
+# JavaScript
+node_modules/
+.next/
+dist/
+build/
+.metro-cache/
+.expo/
+ios/
+android/
+
+# Python
+__pycache__/
+.venv/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+pytest-cache-files-*/
+.ruff_cache/
+.uv-cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.template
+
+# Editors and operating systems
+.DS_Store
+*.log
+.vscode/
+.idea/
